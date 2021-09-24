@@ -1,3 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
-    background: #1a51d333;
+    background: #ddd;
+}
+
+h2{
+    color: red;
+}
+.main__container{
+    max-height: 50px;
+    width: 100%;
+    background-color: #8d8a88;
+    box-shadow: 2px 8px 3px 2px #dbdbdb;
+    .container{
+        .header__nav{
+            background: red;
+            .logo__section{
+                position: absolute;
+                left: 50%;
+            }
+            .nav-item{
+                background-color: #fff;
+                padding: 0px 25px;
+                margin-right: 2px;
+            }
+            .navbar{
+                padding: 25px 0px;
+            }
+            background: white;
+            box-shadow: 0px 7px 12px 4px #888585;
+            border-radius: 10px;
+        }
+        .search__section{
+            margin: 50px 0px;
+            .form-group{
+                select{
+                    border: none;
+                    border-radius: 0px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+                .btn-color{
+                    color: #fbfbfb;
+                    background-color: #959595;
+                    border: none;
+                    border-radius: 0px;
+                    font-weight: 500;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+        .all__counters{
+            text-align: center;
+            background-image: url("../img/image.jpg");
+            height: 50vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            background-size: cover;
+            .single__counter{
+                border: 1px solid #b7b7b7;
+                padding: 35px;
+                background: #f0f0f0;
+                // box-shadow: 0px 4px 7px 3px #bfbfbf;
+                border-radius: 10px;
+                transition: 0.3s all ease;
+                // &:hover{
+                //     box-shadow:none;
+                //     border: none;
+                // }
+                h2{
+                    color: gray;
+                    font-size: 35px;
+                }
+            }
+            
+        }
+        .fetured__lwyers{
+            margin-top: 150px;
+            h2{
+                color: #2f2e2e;
+                margin-bottom: 80px;
+            }
+            .card{
+                padding: 15px;
+                background: #fff;
+                border-radius: 5px;
+                box-shadow: 1px 5px 16px -1px #666, 0px 0px 29px -19px #8ff9e0 inset;
+                .card-body{
+                    .card-title{
+                        color: #464444;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    p{
+                        color: #8a8a8a;
+                        position: relative;
+                        left: -18px;
+                        font-size: 14px;
+                        i{
+                            margin-right: 10px;
+                            font-size: 18px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .search__atoz{
+            margin-top: 150px;
+            h2{
+                color: #2f2e2e;
+                margin-bottom: 80px;
+            }
+
+            .card{
+                .card-body{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .list-group{
+                        .list-group-item{
+                            border: none;
+                            background: #fbfbfb;
+                            margin: 2px 0px;
+                            i{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+    .res__sec{
+        display: block!important;
+        text-align: center;
+    }
+    .left__section{
+        margin-bottom:-20px;
+    }
+    .container .logo__section {
+        position: absolute;
+        left: 40%;
+    }
+
 }
